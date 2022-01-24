@@ -6,8 +6,8 @@ export default function Calculator() {
   const [label, setLabel] = useState('');
   const [totalOps, setTotalOps] = useState(0);
   const [result,setResult] = useState(0);
-  const [firstValue,setFirstValue] = useState(0);
-  const [secondValue,setSecondValue] = useState(0);
+  const [firstValue,setFirstValue] = useState('');
+  const [secondValue,setSecondValue] = useState('');
 
   const changeFirstValue = (event) =>{
     let value = parseFloat(event.target.value);
@@ -41,8 +41,8 @@ export default function Calculator() {
     setLabel('/');
   }
   const resetData = () =>{
-    setFirstValue(0);
-    setSecondValue(0);
+    setFirstValue('');
+    setSecondValue('');
     setLabel('');
     setResult(0);
   }
