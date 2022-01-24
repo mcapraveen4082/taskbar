@@ -49,7 +49,7 @@ export default function Calculator() {
   }
   return (
     <div className="layout-column align-items-center">
-      <div data-testid="total-operations" className="pt-50 total-operations">Total Operation Performed : {totalOps}</div>
+      <div data-testid="total-operations" className="pt-50 total-operations">Total operation performed: {totalOps}</div>
       <div className="card">
 
         <section className="card-text">
@@ -71,7 +71,7 @@ export default function Calculator() {
           <div className="layout-row justify-content-between align-items-center mt-30">
             <button type="reset" onClick={resetData} data-testid="resetButton" className="outline danger">Reset</button>
             <div className="layout-row justify-content-center align-items-center result-container">
-              <div data-testid="result" className="result-value ma-0 slide-up-fade-in">Result : {result}</div>
+              <div data-testid="result" className="result-value ma-0 slide-up-fade-in">Result: {result}</div>
             </div>
           </div>
         </section>
