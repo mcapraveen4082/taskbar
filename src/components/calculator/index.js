@@ -43,13 +43,12 @@ export default function Calculator() {
   const resetData = () =>{
     setFirstValue(0);
     setSecondValue(0);
-    setTotalOps(0);
     setLabel('');
     setResult(0);
   }
   return (
     <div className="layout-column align-items-center">
-      <div data-testid="total-operations" className="pt-50 total-operations">Total operation performed: {totalOps}</div>
+      <div data-testid="total-operations" className="pt-50 total-operations">Total operations performed: {totalOps}</div>
       <div className="card">
 
         <section className="card-text">
