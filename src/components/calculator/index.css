@@ -1,6 +1,9 @@
 .symbol {
     width: 30px;
 }
+.result-value{
+    display: none;
+}
 
 .card {
     transition: height 0.5s ease-in-out;

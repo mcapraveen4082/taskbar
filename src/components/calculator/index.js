@@ -17,34 +17,40 @@ export default function Calculator() {
   const changeSecondValue = (event) =>{
     let value = parseFloat(event.target.value);
     setSecondValue(value);
-    
   }
 
   const doSum = () =>{
       setResult(firstValue+secondValue);
       setTotalOps(totalOps+1);
       setLabel('+');
+      document.getElementsByClassName('result-value')[0].style.display = 'block';
   }
   const doSub = () =>{
     setResult(firstValue-secondValue);
     setTotalOps(totalOps+1);
     setLabel('-');
+    document.getElementsByClassName('result-value')[0].style.display = 'block';
   }
   const doMul = () =>{
     setResult(firstValue*secondValue);
     setTotalOps(totalOps+1);
     setLabel('*');
+    document.getElementsByClassName('result-value')[0].style.display = 'block';
   }
   const doDiv = () =>{
     setResult(firstValue/secondValue);
     setTotalOps(totalOps+1);
     setLabel('/');
+    document.getElementsByClassName('result-value')[0].style.display = 'block';
   }
   const resetData = () =>{
     setFirstValue('');
     setSecondValue('');
     setLabel('+');
     setResult(0);
+    // console.log();
+    document.getElementsByClassName('result-value')[0].style.display = 'none';
+
   }
   return (
     <div className="layout-column align-items-center">
