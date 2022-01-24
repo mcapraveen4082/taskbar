@@ -3,7 +3,7 @@ import "./index.css";
 
 export default function Calculator() {
 
-  const [label, setLabel] = useState('');
+  const [label, setLabel] = useState('+');
   const [totalOps, setTotalOps] = useState(0);
   const [result,setResult] = useState(0);
   const [firstValue,setFirstValue] = useState('');
@@ -43,7 +43,7 @@ export default function Calculator() {
   const resetData = () =>{
     setFirstValue('');
     setSecondValue('');
-    setLabel('');
+    setLabel('+');
     setResult(0);
   }
   return (
