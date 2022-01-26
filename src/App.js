@@ -1,15 +1,21 @@
 import React  from 'react';
 import './App.css';
 import 'h8k-components';
-import Calculator from '././components/calculator/index.js';
+import Taskbar from './components/taskbar';
+// import Header from './components/header';
+import Leftpanel from './components/leftpanel';
 
-const title = "Calculator";
+const title = "Taskbar";
 
 function App() {
   return (
     <div>
       <h8k-navbar header={title} />
-      <Calculator/>
+      <div className="wrapper-container">
+        <Leftpanel/>
+        {/* <Header/> */}
+        <Taskbar/>
+      </div>
     </div>
   );
 }
